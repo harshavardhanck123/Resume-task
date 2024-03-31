@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+}
+
+p,
+ul {
+    font-size: 14px;
+}
+
+.container {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.imgg {
+    border: 4px dotted #FABF27;
+    border-radius: 50%;
+    padding: 2px;
+    width: 150px;
+}
+
+.image {
+    background-color: #565656;
+    padding-top: 30px;
+}
+
+.white {
+    background-color: #EEEEEE;
+    height: 20px;
+}
+
+.mail {
+    background-color: white;
+    height: 30px;
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17.5px;
+}
+
+.edit {
+    background-color: #FABF27;
+    width: 30%;
+    font-size: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+}
+
+.column-wrapper {
+    display: flex;
+}
+
+.line-1 {
+    border-right: 2px solid #BFBFBF;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.line-2 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.col-md-6:last-child {
+    border-right: none;
+}
+
+.just {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+    width: 500px;
+}
+.just + p {
+    margin-top: -10px; /* Adjust margin to align the next paragraph */
+}
+
+.progress-container {
+    position:relative ;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress-label {
+    flex: 0 0 auto;
+    font-size: 20px;
+    margin-right: 10px;
+    min-width: 230px;
+    flex-shrink: 0;
+    flex: 1;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.progress {
+
+    border-radius: 2px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    margin-left: auto;
+    padding-right: 30px; 
+}
+
+.progress-bar {
+    position: relative;
+    background-image: linear-gradient(to right, #e0a800, #ffd700);
+    height: 100%;
+}
+
+.pos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.pos span {
+    align-self: flex-end;
+    margin-top: -20px;
+}
+
+.title-and-date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.bt {
+    padding-top: -20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.title-and-date h2 {
+    margin-right: 10px;
+}
+
+.icon {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.progress-bar::after {
+    content: ''; /* Add content to the pseudo-element */
+    position: absolute; /* Position the stopper relative to the progress bar */
+    top: 50%; /* Align to the middle vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    width: 16px; /* Set width of the stopper */
+    height: 16px; /* Set height of the stopper */
+    border-radius: 50%; /* Make the stopper round */
+    background-color: white; /* Adjust color as needed */
+    border: 2px solid white; /* Add border for tool appearance */
+    box-shadow: 0 0 5px rgba(225, 221, 221, 0.993); /* Add shadow for depth */
+    cursor: pointer; /* Add pointer cursor to indicate adjustability */
+    z-index: 1; /* Ensure the stopper is above the progress bar */
+    right: 0px; /* Position the stopper at the end of the progress bar */
+}
